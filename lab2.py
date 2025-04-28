@@ -19,11 +19,11 @@ def calc_average(numberlist):
 def calc_max(numlist):
     largest=max(numlist)
     print("maximum number is:"+str(largest))
-
-def calc_min(list):
-    lowest=min(list)
+    lowest=min(numlist)
     print("minimum number is:"+str(lowest))
     
+
+
 
 
 def main():
@@ -31,7 +31,7 @@ def main():
     x= get_user_input()
     calc_average(x)
     calc_max(x)
-    calc_min(x)
+    
 
 if __name__ == "__main__":
     main()
