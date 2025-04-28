@@ -21,17 +21,25 @@ def calc_max(numlist):
     print("maximum number is:"+str(largest))
     lowest=min(numlist)
     print("minimum number is:"+str(lowest))
-    
+    return
 
-
-
+def calc_median(listorder):
+    ascending=listorder.sort()
+    n=len(listorder)
+    if n%2==0:
+        median= ((listorder[(n//2-1)]+listorder[n//2])/2)
+    else:
+        median=(n+1)/2
+    print("The median is:"+str(median))
+    return
 
 def main():
     display_main_menu()
-    x= get_user_input()
-    calc_average(x)
-    calc_max(x)
-    
+    list= get_user_input()
+    calc_average(list)
+    calc_max(list)
+    calc_median(list)
 
+    
 if __name__ == "__main__":
     main()
