@@ -14,14 +14,14 @@ def get_user_input():
 def calc_average(numberlist):
     average=sum(numberlist)/len(numberlist)
     print("average is:"+ str(average))
-    return
+    return average
 
 def calc_max(numlist):
     largest=max(numlist)
     print("maximum number is:"+str(largest))
     lowest=min(numlist)
     print("minimum number is:"+str(lowest))
-    return
+    return largest,lowest
 
 def calc_median(listorder):
     ascending=listorder.sort()
@@ -31,7 +31,7 @@ def calc_median(listorder):
     else:
         median=(n+1)/2
     print("The median is:"+str(median))
-    return
+    return median
 
 def main():
     display_main_menu()
